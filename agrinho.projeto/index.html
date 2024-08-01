@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Tecnologia Agrícola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Tecnologia Agrícola</h1>
+        <div id="quiz">
+            <p id="question">Qual é a tecnologia usada para monitorar a saúde das plantas?</p>
+            <div id="answers">
+                <button class="answer" data-correct="false" data-money="0">Sistema de Irrigação</button>
+                <button class="answer" data-correct="true" data-money="100">Sensores de Umidade</button>
+                <button class="answer" data-correct="false" data-money="0">Drones de Pulverização</button>
+                <button class="answer" data-correct="false" data-money="0">Máquinas de Colheita</button>
+            </div>
+            <p id="result"></p>
+            <p id="money">Dinheiro: R$0</p>
+            <div id="prize-container">
+                <p id="prize"></p>
+                <img id="gift-box" src="images/gift-box.gif" alt="Caixa de Presente" class="hidden">
+                <img id="robot" src="images/robot.png" alt="Robô de Monitoramento" class="hidden">
+            </div>
+            <button id="retry-button" class="hidden">Tentar Novamente</button> <!-- Botão de tentar novamente -->
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
